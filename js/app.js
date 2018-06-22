@@ -131,13 +131,31 @@ const thomsCloset = [
 ];
 
 
+let kristynsShoe = kristynsCloset.shift();
 
 
+console.log(kristynsShoe);
+console.log(kristynsCloset);
+
+thomsCloset[2].push(kristynsShoe);
+console.log(thomsCloset);
+
+console.log(`Kristyn will be wearing ${kristynsCloset[0]}, ${kristynsCloset[2]}, and ${kristynsCloset[5]}`);
+console.log(`Kristyn will be wearing ${kristynsCloset[1]}, ${kristynsCloset[3]}, and ${kristynsCloset[5]}`);
+console.log(`Kristyn will be wearing ${kristynsCloset[2]}, ${kristynsCloset[4]}, and ${kristynsCloset[1]}`);
+
+console.log(`Thom will be wearing ${thomsCloset[0][0]}, ${thomsCloset[1][0]}, and ${thomsCloset[2][0]}`);
+console.log(`Thom will be wearing ${thomsCloset[0][1]}, ${thomsCloset[1][1]}, and ${thomsCloset[2][1]}`);
+console.log(`Thom will be wearing ${thomsCloset[0][2]}, ${thomsCloset[1][2]}, and ${thomsCloset[2][2]}`);
 
 
+for (let i = 0; i < kristynsCloset.length; i++) {
+  console.log(`Now washing ${kristynsCloset[i]}`);
+}
 
-
-
+for (let i = 0; i < thomsCloset.length; i++) {
+  console.log(thomsCloset[i]);
+}
 
 
 
